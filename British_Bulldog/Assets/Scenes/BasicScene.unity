@@ -421,6 +421,16 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1169103138}
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+--- !u!4 &441087507 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1680501587, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 441087506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &441087508 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1767192434, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 441087506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &516949522
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,7 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286175f3c0afcc74c8fe69e1e2f8c355, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCChase
-  player: {fileID: 1169103131}
+  player: {fileID: 441087508}
   speed: 3
   gameManager: {fileID: 2135759262}
 --- !u!136 &516949524
@@ -1975,7 +1985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286175f3c0afcc74c8fe69e1e2f8c355, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCChase
-  player: {fileID: 1169103131}
+  player: {fileID: 441087508}
   speed: 3
   gameManager: {fileID: 2135759262}
 --- !u!136 &1436947418
@@ -2536,7 +2546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286175f3c0afcc74c8fe69e1e2f8c355, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCChase
-  player: {fileID: 1169103131}
+  player: {fileID: 441087508}
   speed: 3
   gameManager: {fileID: 2135759262}
 --- !u!136 &1824847368
@@ -2666,7 +2676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286175f3c0afcc74c8fe69e1e2f8c355, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCChase
-  player: {fileID: 1169103131}
+  player: {fileID: 441087507}
   speed: 3
   gameManager: {fileID: 2135759262}
 --- !u!136 &1826857732
@@ -2796,7 +2806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286175f3c0afcc74c8fe69e1e2f8c355, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCChase
-  player: {fileID: 1169103131}
+  player: {fileID: 441087508}
   speed: 3
   gameManager: {fileID: 2135759262}
 --- !u!136 &2086575864

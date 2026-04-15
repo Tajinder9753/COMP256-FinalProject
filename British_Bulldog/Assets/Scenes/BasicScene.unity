@@ -3153,7 +3153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa0adf504920e2941a74334ca67ac8cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  player: {fileID: 1169103131}
+  xrOrigin: {fileID: 1169103131}
+  mainCamera: {fileID: 441087508}
   startPoint: {fileID: 2109779413}
   messageText: {fileID: 560659255}
   scoreText: {fileID: 1248402630}

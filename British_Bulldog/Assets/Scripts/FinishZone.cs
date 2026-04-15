@@ -6,9 +6,20 @@ public class FinishZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Something entered finish zone: " + other.name);
+
         if (other.CompareTag("Player"))
         {
-            gameManager.PlayerReachedFinish();
+            Debug.Log("Player reached finish zone!");
+
+            if (gameManager != null)
+            {
+                gameManager.PlayerReachedFinish();
+            }
+            else
+            {
+                Debug.LogWarning("GameManager is not assigned in FinishZone.");
+            }
         }
     }
 }

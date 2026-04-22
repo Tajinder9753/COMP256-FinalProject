@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,8 +10,16 @@ public class GameManager : MonoBehaviour
 
     public TMP_Text messageText;
     public TMP_Text scoreText;
+    public TMP_Text targetScoreText;
 
-    private int score = 0;
+
+    private int score = 4;
+    public int targetScore = 5;
+
+    private void Awake()
+    {
+        targetScoreText.text = "Target Score: " + targetScore;
+    }
 
     void Start()
     {
@@ -28,12 +37,22 @@ public class GameManager : MonoBehaviour
         score++;
         scoreText.text = "Score: " + score;
         messageText.text = "You Win!";
+        if (score >= targetScore)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
         Invoke(nameof(StartRound), 2f);
     }
 
     public void PlayerCaught()
     {
         messageText.text = "CAUGHT!";
+        //add penalty for getting caught
+        if (score > 0)
+        {
+            score--;
+            scoreText.text = "Score: " + score;
+        }
         Invoke(nameof(StartRound), 2f);
     }
 

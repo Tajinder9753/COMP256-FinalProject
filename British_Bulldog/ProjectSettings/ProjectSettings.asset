@@ -908,7 +908,7 @@ PlayerSettings:
   platformArchitecture: {}
   scriptingBackend:
     Android: 1
-    Standalone: 1
+    Standalone: 0
   il2cppCompilerConfiguration: {}
   il2cppCodeGeneration: {}
   il2cppStacktraceInformation: {}
@@ -925,8 +925,8 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: British_Bulldog
-  metroPackageVersion: 
+  metroPackageName: BritishBulldog
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -934,7 +934,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: British_Bulldog
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: British_Bulldog
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

@@ -11,9 +11,22 @@ public class ChaserAgent : Agent
     public GameManager gameManager;
     public Rigidbody rBody;
     public Vector3 startingPoint;
+    public Animator anim;
     private void Start()
     {
         startingPoint = transform.position;
+    }
+
+    private void Update()
+    {
+        if (rBody.linearVelocity.magnitude > 0.1f)
+        {
+            anim.SetBool("IsMoving", true);
+        }
+        else
+        {
+            anim.SetBool("IsMoving", false);
+        }
     }
 
     public override void CollectObservations(VectorSensor sensor)

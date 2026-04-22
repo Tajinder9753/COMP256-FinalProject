@@ -12,8 +12,8 @@ public class GameManager : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text targetScoreText;
 
-
-    private int score = 4;
+    public ChaserAgent[] chaserAgents;
+    private int score = 0;
     public int targetScore = 5;
 
     private void Awake()
@@ -64,9 +64,18 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+
+        //reset player
         Vector3 cameraOffset = mainCamera.position - xrOrigin.position;
         Vector3 targetPosition = startPoint.position - cameraOffset;
 
         xrOrigin.position = targetPosition;
+
+        //reset agents
+        foreach (ChaserAgent agent in chaserAgents)
+        {
+            agent.transform.position = agent.startingPoint;
+            agent.rBody.linearVelocity = Vector3.zero;
+        }
     }
 }

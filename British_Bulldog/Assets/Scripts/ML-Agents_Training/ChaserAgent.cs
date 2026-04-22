@@ -10,6 +10,11 @@ public class ChaserAgent : Agent
     public float speed = 10f;
     public GameManager gameManager;
     public Rigidbody rBody;
+    public Vector3 startingPoint;
+    private void Start()
+    {
+        startingPoint = transform.position;
+    }
 
     public override void CollectObservations(VectorSensor sensor)
     {

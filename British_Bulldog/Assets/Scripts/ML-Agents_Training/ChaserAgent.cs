@@ -48,6 +48,17 @@ public class ChaserAgent : Agent
             rBody.linearVelocity.y,
             actions.ContinuousActions[1] * speed
         );
+
+        Vector3 E = this.transform.position;
+        Vector3 P = target.transform.position;
+        Vector3 Heading = P - E;
+        Heading.y = 0;
+        Vector3 HeadingDir = Heading.normalized; 
+        if(HeadingDir != Vector3.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(HeadingDir);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5f);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
